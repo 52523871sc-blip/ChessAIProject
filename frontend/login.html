@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Login</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Login</h1>
+    <nav>
+      <a href="login.html" id="nav-login">Login</a>
+      <a href="profile.html" id="nav-profile" class="hidden">Profile</a>
+      <a href="game.html" id="nav-game" class="hidden">Game</a>
+      <button id="logout-btn" class="hidden">Logout</button>
+      <span id="user-label"></span>
+    </nav>
+  </header>
+  <main>
+    <section class="view">
+      <h2>Login</h2>
+      <form id="login-form">
+        <label>Username <input name="username" required /></label>
+        <label>Password <input name="password" type="password" required /></label>
+        <button type="submit">Login</button>
+      </form>
+      <pre id="login-result" class="result"></pre>
+    </section>
+  </main>
+  <script src="common.js"></script>
+  <script src="login.js"></script>
+</body>
+</html>
